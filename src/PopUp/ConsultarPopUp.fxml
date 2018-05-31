@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="221.0" prefWidth="572.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="PopUp.ConsultarPopUpController">
+    <stylesheets>
+        <URL value="@/css/EstilosGenerales.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="14.0" layoutY="10.0" prefHeight="200.0" prefWidth="549.0" style="-fx-background-color: #00695C;">
+         <children>
+            <Label alignment="CENTER" layoutY="21.0" prefHeight="17.0" prefWidth="549.0" text="INSERTAR NUEVO FAMILIAR" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="inputNuevaPersona" alignment="CENTER" focusColor="WHITE" layoutX="17.0" layoutY="60.0" maxWidth="522.0" minWidth="176.0" prefHeight="59.0" prefWidth="522.0" promptText="ESCRIBIR NOMBRE" style="-fx-text-fill: white;" unFocusColor="WHITE">
+               <font>
+                  <Font name="Arial Narrow" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="botonInsertar" layoutX="16.0" layoutY="136.0" onAction="#consultarPersona" prefHeight="32.0" prefWidth="522.0" style="-fx-background-color: #0097A7;" text="CONSULTAR" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
